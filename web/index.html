@@ -1,0 +1,384 @@
+     <!DOCTYPE html>
+      <html lang="en">
+
+      <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Child Care System</title>
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+         <link rel="stylesheet" href="css/homestyle1.css">
+         <!--<link href="css/bootstraps.css" rel="stylesheet">-->
+         <link href="assets/img/child-care-icon.png" rel="icon" type="images/png">
+         <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+         <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+         <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+         
+         <style>
+             :root {
+   --main-color: #8e44ad;
+   --red: #e74c3c;
+   --orange: #f39c12;
+   --light-color: #888;
+   --light-bg: #eee;
+   --black: #2c3e50;
+   --white: #fff;
+   --border: .1rem solid rgba(0, 0, 0, .2);
+}
+             /* Right Sidebar Styles */
+.sidebar-right {
+    float: right; /* Align the sidebar to the right */
+    width: 300px; /* Set the width of the sidebar */
+    background-color: var(--white); /* Background color for the sidebar */
+    padding: 20px; /* Add some padding for spacing */
+    margin-left: 20px; /* Add a margin to separate it from the main content */
+}
+
+/* Style for the "Latest Posts" section */
+.sidebar-widget h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.sidebar-widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-widget ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-widget a {
+    text-decoration: none;
+    color: var(--black);
+    transition: color 0.3s;
+    font-size: 1.5rem;
+}
+
+.sidebar-widget a:hover {
+    color: var(--main-color);
+}
+
+/* Style for the "Contacts/Links" section */
+.sidebar-widget:last-child {
+    margin-top: 30px;
+}
+
+.sidebar-widget:last-child h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.sidebar-widget:last-child ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-widget:last-child ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-widget:last-child a {
+    text-decoration: none;
+    color: var(--black);
+    transition: color 0.3s;
+}
+
+.sidebar-widget:last-child a:hover {
+    color: var(--main-color);
+}
+.sider-img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.home-grid .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 85.5rem);
+   gap: 1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+         </style>
+      </head>
+<header class="header">
+    <section class="flex">
+        <a href="home" class="logo">Children Care</a>
+        <form action="searchBlog" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search on web..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+        <div class="profile">
+
+        <div class="flex-btn">
+            <a href="login.jsp" class="option-btn">Login</a>
+            <a href="register.jsp" class="option-btn">Register</a>
+        </div>
+</div>
+
+
+    </section>
+</header>
+      <div class="side-bar">
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+         <li><a href="home"><i class="fas fa-home"></i><span>home</span></a></li>
+         
+         <li><a href="aboutcontrol"><i class="fas fa-question"></i><span>about</span></a></li>
+
+         <li><a href="servicelistpaging"><i class="fas fa-chalkboard-user"></i><span>services</span></a></li>
+
+         <li><a href="bloglist"><i class="fa-solid fa-blog"></i><span>blogs</span></a></li>
+
+         <li><a href="staff.jsp"><i class="fa-solid fa-clipboard-user"></i><span>Staffs</span></a></li>
+
+         <li><a href="feedback"><i class="fas fa-headset"></i><span>Feedback</span></a></li>
+
+            </ul>
+      </nav>
+
+   </div>
+
+         <!-- ======= About Section ======= -->
+         <section class="home-grid">
+
+            <h1 class="heading">Welcome to Children's Care System</h1>
+
+            <div class="box-container">
+
+               <div class="box">
+                  <div class="icon-box">
+                     <div class="icon"><i class="fa-solid fa-fingerprint"></i></div>
+                     <h3 class="title">24/7</h3>
+                     <p class="likes">Always takes care your children anytime, anywhere.</p>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                     <h3 class="title">Best Services</h3>
+                     <p class="likes">A team of prestigious and top quality doctors from Eastern Laos, Cambodia,
+                        Thailand,
+                        Malaysia...</p>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon"><i class="fa-solid fa-atom"></i></div>
+                     <h3 class="title">Very Cheap</h3>
+                     <p class="likes">Don't worry about price. Here we have discount to 70% and sometimes free for
+                        broken
+                        children.</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <h3 class="title">services</h3>
+                  <div class="flex">
+                     <a href="#"><i class="fa-solid fa-eye"></i><span>Eyes</span></a>
+                     <a href="#"><i class="fa-solid fa-teeth-open"></i><span>Mouth</span></a>
+                     <a href="#"><i class="fa-solid fa-socks"></i><span>Foot</span></a>
+                     <a href="#"><i class="fa-solid fa-box-tissue"></i><span>Noose</span></a>
+                     <a href="#"><i class="fa-solid fa-lungs"></i><span>Lung</span></a>
+                     <a href="#"><i class="fa-solid fa-child"></i><span>Body</span></a>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <h3 class="title">hot services</h3>
+                  <div class="flex">
+                     <a href="#"><i class="fa-solid fa-file"></i><span>General Liver Function Test Package</span></a>
+                     <a href="#"><i class="fa-solid fa-id-card"></i><span>Apply SDF to prevent and stop the</span></a>
+                     <a href="#"><i class="fa-solid fa-comment-dots"></i><span>Package for children under 8</span></a>
+                  </div>
+               </div>
+
+            </div>
+            <!-- ======= Counts Section ======= -->
+            <div id="counts" class="counts">
+               <div class="container">
+
+                  <div class="counts-box">
+
+                     <div class="col-lg-3 col-md-6">
+                        <div class="count-box">
+                           <i class="fas fa-user-md"></i>
+                           <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                           <p>Doctors</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="count-box">
+                           <i class="far fa-hospital"></i>
+                           <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                           <p>Departments</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                           <i class="fas fa-flask"></i>
+                           <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                           <p>Research Labs</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                           <i class="fas fa-award"></i>
+                           <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                           <p>Awards</p>
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+<footer class="footer">
+
+   &copy; copyright @ 2023 by <span>Group 1</span> | all rights reserved!
+
+</footer>
+         <script>
+            let toggleBtn = document.getElementById('toggle-btn');
+            let body = document.body;
+            let darkMode = localStorage.getItem('dark-mode');
+
+            const enableDarkMode = () => {
+               toggleBtn.classList.replace('fa-sun', 'fa-moon');
+               body.classList.add('dark');
+               localStorage.setItem('dark-mode', 'enabled');
+            };
+
+            const disableDarkMode = () => {
+               toggleBtn.classList.replace('fa-moon', 'fa-sun');
+               body.classList.remove('dark');
+               localStorage.setItem('dark-mode', 'disabled');
+            };
+
+            if (darkMode === 'enabled') {
+               enableDarkMode();
+            };
+
+            toggleBtn.onclick = (e) => {
+               darkMode = localStorage.getItem('dark-mode');
+               if (darkMode === 'disabled') {
+                  enableDarkMode();
+               } else {
+                  disableDarkMode();
+               }
+            };
+
+            let profile = document.querySelector('.header .flex .profile');
+
+            document.querySelector('#user-btn').onclick = () => {
+               profile.classList.toggle('active');
+               search.classList.remove('active');
+            };
+
+            let search = document.querySelector('.header .flex .search-form');
+
+            document.querySelector('#search-btn').onclick = () => {
+               search.classList.toggle('active');
+               profile.classList.remove('active');
+            };
+
+            let sideBar = document.querySelector('.side-bar');
+
+            document.querySelector('#menu-btn').onclick = () => {
+               sideBar.classList.toggle('active');
+               body.classList.toggle('active');
+            };
+
+            document.querySelector('#close-btn').onclick = () => {
+               sideBar.classList.remove('active');
+               body.classList.remove('active');
+            };
+
+            window.onscroll = () => {
+               profile.classList.remove('active');
+               search.classList.remove('active');
+
+               if (window.innerWidth < 1200) {
+                  sideBar.classList.remove('active');
+                  body.classList.remove('active');
+               }
+            };
+
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+               let i;
+               const slides = document.querySelectorAll('.mySlides');
+               for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = 'none';
+               }
+               slideIndex++;
+               if (slideIndex > slides.length) {
+                  slideIndex = 1;
+               }
+               slides[slideIndex - 1].style.display = 'block';
+               setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+            }
+
+            // Function to change slides on button click
+            function plusSlides(n) {
+               slideIndex += n;
+               const slides = document.querySelectorAll('.mySlides');
+               if (slideIndex > slides.length) {
+                  slideIndex = 1;
+               } else if (slideIndex < 1) {
+                  slideIndex = slides.length;
+               }
+               for (let i = 0; i < slides.length; i++) {
+                  slides[i].style.display = 'none';
+               }
+               slides[slideIndex - 1].style.display = 'block';
+            };
+            function addToCardAsync(id){
+                axios.get('addtocardasync',{
+                    params: {
+                        id:id
+                    }
+                }).then((response)=>{
+                    // lấy data
+                    document.getElementById("cart-number").innerHTML = response.data;
+                    // cập nhật
+                });
+            }
+         </script>
+         <script src="assets/vendor/purecounter/purecounter.js"></script>
+         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+         <script src="assets/vendor/php-email-form/validate.js"></script>
+         <script src="js/script.js"></script>
+
+      </body>
+
+      </html>
